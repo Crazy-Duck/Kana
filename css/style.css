@@ -2,7 +2,6 @@ html, body {
     font-family: sans-serif;
     background-color: burlywood;
     color: darkred;
-    //height: 100%;
 }
 
 .score {
@@ -10,9 +9,6 @@ html, body {
 }
 
 .container {
-    //max-width: 50em;
-    //margin: 0 auto;
-    //height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,13 +19,13 @@ html, body {
     display: flex;
 }
 
-.mode {
+.mode, #invert {
     font-size: 6vh;
     padding: 0.5em 0.5em 0.5em 0.5em;
     margin: 0.5em 0.5em 0.5em 0.5em;
     border-radius: 0.5em;
 }
-.mode[data-select = "true"] {
+.mode[data-select = "true"], #invert[data-select = "true"] {
     background-color: aliceblue;
 }
 
@@ -42,8 +38,17 @@ html, body {
 .question {
     height:40vh;
     width:40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.question[data-language = "kana"] {
     font-size: 40vh;
-    text-align: center;
+}
+
+.question[data-language = "romaji"] {
+    font-size: 30vh;
 }
 
 .answers{
@@ -68,6 +73,6 @@ html, body {
     color: white;
 }
 
-.answer:hover, .mode:hover {
+.answer:hover, .mode:hover, #invert:hover {
     cursor: pointer;
 }

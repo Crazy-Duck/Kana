@@ -7,9 +7,9 @@ romaji/kana character. Each correct answer increases the score by one, an incorr
 ## Implemented game modes
 * Katakana to Romaji
 * Hiragana to Romaji
-
-## TODO
 * Romaji to Katakana
 * Romaji to Hiragana
+
+## TODO
 * Katakana to Hiragana
 * Hiragana to Katakana
