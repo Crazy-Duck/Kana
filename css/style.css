@@ -19,10 +19,10 @@ html, body {
     display: flex;
 }
 
-#mode, #invert {
+.mode {
     font-size: 6vh;
     padding: 0.5em 0.5em 0.5em 0.5em;
-    margin: 0.5em 0.5em 0.5em 0.5em;
+    margin: 0.5em 0.2em 0.5em 0.2em;
     border-radius: 0.5em;
     background-color: aliceblue;
 }
@@ -71,6 +71,6 @@ html, body {
     color: white;
 }
 
-.answer:hover, #mode:hover, #invert:hover {
+.answer:hover, .mode:hover {
     cursor: pointer;
 }

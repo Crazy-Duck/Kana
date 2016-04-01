@@ -8,8 +8,9 @@
 
     var question = document.getElementById('question');
     var answers = document.getElementsByClassName('answer');
-    var eKana = document.getElementById('mode');
+    var mode = document.getElementById('mode');
     var invert = document.getElementById('invert');
+    var cross = document.getElementById('cross');
 
     var score = 0;
     var kana = 0;
@@ -114,13 +115,12 @@
             });
         });
     // Add mode event handlers
-    eKana.addEventListener('click', event => {
+    mode.addEventListener('click', event => {
         // Set language
         kana = (kana + 1) % kanas.length;
-        dictionary = isInverted ?
-            array_flip(languages[kanas[kana]+polys[poly]]) :
-            languages[kanas[kana]+polys[poly]];
-        eKana.innerText = kanas[kana];
+        dictionary = languages[kanas[kana]+polys[poly]];
+        dictionary = isInverted ? array_flip(dictionary) : dictionary;
+        mode.innerText = kanas[kana];
         // Create new question
         initQuestion();
         resetScore();
@@ -134,6 +134,14 @@
         question.dataset.language = question.dataset.language == 'kana' ? 'romaji' : 'kana';
         // Create new question
         initQuestion();
+        resetScore();
     });
-
+    // Add invert event handler
+    cross.addEventListener('click', event => {
+        dictionary = languages["Cross"+polys[poly]];
+        dictionary = isInverted ? array_flip(dictionary) : dictionary;
+        // Create new question
+        initQuestion();
+        resetScore();
+    });
 })();
