@@ -1,7 +1,7 @@
 'use strict';
 
 (function (){
-    var kanas = ["Katakana", "Hiragana"];
+    var kanas = ["Katakana", "Hiragana", "Cross"];
     var polys = ["Monographs", "Digraphs", "Trigraphs"];
     var language = kanas[0];
     var dictionary = languages["KatakanaMonographs"];
@@ -10,7 +10,6 @@
     var answers = document.getElementsByClassName('answer');
     var mode = document.getElementById('mode');
     var invert = document.getElementById('invert');
-    var cross = document.getElementById('cross');
 
     var score = 0;
     var kana = 0;
@@ -132,14 +131,6 @@
         // Change language
         dictionary = array_flip(dictionary);
         question.dataset.language = question.dataset.language == 'kana' ? 'romaji' : 'kana';
-        // Create new question
-        initQuestion();
-        resetScore();
-    });
-    // Add invert event handler
-    cross.addEventListener('click', event => {
-        dictionary = languages["Cross"+polys[poly]];
-        dictionary = isInverted ? array_flip(dictionary) : dictionary;
         // Create new question
         initQuestion();
         resetScore();
