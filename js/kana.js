@@ -1,5 +1,5 @@
 var languages = {
-    hiraganaMonographs: {
+    HiraganaMonographs: {
         "あ": "A", "い": "I", "う": "U", "え": "E", "お": "O",
         "か": "KA", "き": "KI", "く": "KU", "け": "KE", "こ": "KO",
         "さ": "SA", "し": "SHI", "す": "SU", "せ": "SE", "そ": "SO",
@@ -17,7 +17,7 @@ var languages = {
         "ぱ": "PA", "ぴ": "PI", "ぷ": "PU", "ぺ": "PE", "ぽ": "PO"
     },
 
-    hiraganaDigraphs: {
+    HiraganaDigraphs: {
         "きゃ": "KYA", "きゅ": "KYU", "きょ": "KYO",
         "しゃ": "SHA", "しゅ": "SHU", "しょ": "SHO",
         "ちゃ": "CHA", "ちゅ": "CHU", "ちょ": "CHO",
@@ -31,7 +31,7 @@ var languages = {
         "ぴゃ": "PYA", "ぴゅ": "PYU", "ぴょ": "PYO"
     },
 
-    katakanaMonographs : {
+    KatakanaMonographs : {
         "ア": "A", "イ": "I", "ウ": "U", "エ": "E", "オ": "O",
         "カ": "KA", "キ": "KI", "ク": "KU", "ケ": "KE", "コ": "KO",
         "サ": "SA", "シ": "SHI", "ス": "SU", "セ": "SE", "ソ": "SO",
@@ -49,7 +49,7 @@ var languages = {
         "パ": "PA", "ピ": "PI", "プ": "PU", "ペ": "PE", "ポ": "PO"
     },
 
-    katakanaDigraphs: {
+    KatakanaDigraphs: {
         "アー": "Ā", "イー": "Ī", "ウー": "Ū", "エー": "Ē", "オー": "Ō",
         "カー": "KĀ", "キー": "KĪ", "クー": "KŪ", "ケー": "KĒ", "コー": "KŌ",
         "サー": "SĀ", "シー": "SHĪ", "スー": "SŪ", "セー": "SĒ", "ソー": "SŌ",
@@ -78,7 +78,7 @@ var languages = {
         "ピャ": "PYA", "ピュ": "PYU", "ピョ": "PYO"
     },
 
-    katakanaTrigraphs: {
+    KatakanaTrigraphs: {
         "キャー": "KYĀ", "キュー": "KYŪ", "キョー": "KYŌ",
         "シャー": "SHĀ", "シュー": "SHŪ", "ショー": "SHŌ",
         "チャー": "CHĀ", "チュー": "CHŪ", "チョー": "CHŌ",

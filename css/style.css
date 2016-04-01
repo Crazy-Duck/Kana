@@ -19,13 +19,11 @@ html, body {
     display: flex;
 }
 
-.mode, #invert {
+#mode, #invert {
     font-size: 6vh;
     padding: 0.5em 0.5em 0.5em 0.5em;
     margin: 0.5em 0.5em 0.5em 0.5em;
     border-radius: 0.5em;
-}
-.mode[data-select = "true"], #invert[data-select = "true"] {
     background-color: aliceblue;
 }
 
@@ -73,6 +71,6 @@ html, body {
     color: white;
 }
 
-.answer:hover, .mode:hover, #invert:hover {
+.answer:hover, #mode:hover, #invert:hover {
     cursor: pointer;
 }
