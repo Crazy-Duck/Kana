@@ -1,15 +1,14 @@
 'use strict';
 
 (function (){
-    var kanas = ["Katakana", "Hiragana", "Cross"];
-    var polys = ["Monographs", "Digraphs", "Trigraphs"];
-    var language = kanas[0];
-    var dictionary = languages["KatakanaMonographs"];
+    var kanas       = ["Katakana", "Hiragana", "Cross"];
+    var polys       = ["Monographs", "Digraphs", "Trigraphs"];
+    var dictionary  = languages["KatakanaMonographs"];
 
-    var question = document.getElementById('question');
-    var answers = document.getElementsByClassName('answer');
-    var mode = document.getElementById('mode');
-    var invert = document.getElementById('invert');
+    var question    = document.getElementById('question');
+    var answers     = document.getElementsByClassName('answer');
+    var mode        = document.getElementById('mode');
+    var invert      = document.getElementById('invert');
 
     var score = 0;
     var kana = 0;
