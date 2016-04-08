@@ -9,7 +9,5 @@ romaji/kana character. Each correct answer increases the score by one, an incorr
 * Hiragana to Romaji
 * Romaji to Katakana
 * Romaji to Hiragana
-
-## TODO
 * Katakana to Hiragana
 * Hiragana to Katakana
